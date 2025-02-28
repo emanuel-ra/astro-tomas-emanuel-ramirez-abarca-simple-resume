@@ -1,3 +1,13 @@
+---
+import { getI18N } from '@i18n/index'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import IconBrandGithub from './icons/IconBrandGithub.astro'
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <!-- Social -->
 <div>
   <div class='mb-8 border-b-4 border-gray-100 py-2.5 dark:border-gray-900'>
@@ -63,34 +73,25 @@
 
   <!-- Footer -->
   <footer class='mt-20 space-y-2 py-8 text-sm text-gray-600 dark:text-gray-400'>
-    <p class='font-semibold'>
+    <!-- <p class='font-semibold'>
       Resume &copy;
       <script>
         document.write(new Date().getFullYear())
       </script>
-    </p>
+    </p> -->
     <p class='inline-flex items-center gap-1'>
-      <span>Coding with</span>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 20 20'
-        fill='currentColor'
-        data-slot='icon'
-        class='hi-mini hi-heart inline-block size-5 text-rose-500'
-      >
-        <path
-          d='m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z'
-        ></path>
-      </svg>
-      <span
-        >by
+      <span>
         <a
-          href='#'
+          href='https://github.com/emanuel-ra/astro-tomas-emanuel-ramirez-abarca-simple-resume'
+          target='_blank'
           class='font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75'
+          aria-label="GitHub's repository"
         >
-          Emanuel
-        </a></span
-      >
+          {t('social.repository')}
+        </a>
+      </span>
+
+      <IconBrandGithub />
     </p>
   </footer>
   <!-- END Footer -->

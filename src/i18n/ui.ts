@@ -24,11 +24,13 @@ export const showDefaultLang = false;
 export const ui = {
 	es: {
 		'bio.education': 'Educación',
-		'work-experience': 'Experiencia Laboral',		
+		'work-experience': 'Experiencia Laboral',	
+		'social.repository': 'Repositorio',	
 	},
 	en: {
 		'bio.education': 'Education',
 		'work-experience': 'Work Experience',		
+		'social.repository': 'Repository',
 	}
 } as const;
 
