@@ -6,7 +6,7 @@ export const ThemeButton = () => {
     const theme = useStore($theme);
 
     return (    
-        <button onClick={toggleTheme} className='inline-block size-9 text-gray-600 hover:opacity-75 dark:text-gray-400'>
+        <button type='button' aria-label={theme === 'light' ? 'Switch to dark mode':'Switch to light mode'} onClick={toggleTheme} className='inline-block size-9 text-gray-600 hover:opacity-75 dark:text-gray-400'>
             {theme === 'light' ? <IconMoonFilled /> : <IconBrightnessUp />}
         </button>
     );
