@@ -1,7 +1,16 @@
+---
+import { getI18N } from '@i18n/index'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <!-- Education -->
 <div>
   <div class='mb-8 border-b-4 border-gray-100 py-2.5 dark:border-gray-900'>
-    <h3 class='text-xl font-medium'>Education</h3>
+    <h3 class='text-xl font-medium'>{t('bio.education')}</h3>
   </div>
   <ul
     class="relative space-y-6 pl-6 before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-purple-50 before:content-[''] dark:before:bg-purple-950"
@@ -10,46 +19,13 @@
       class="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-purple-200/75 before:bg-white before:content-[''] dark:before:border-purple-800/75 dark:before:bg-gray-950"
     >
       <h4 class='text-sm font-semibold text-purple-600 dark:text-purple-500'>
-        2000-2005
+        2012-2016
       </h4>
       <h5 class='mb-2 font-bold'>
-        Bachelor in Computer Science, University London, UK
+        {i18n.EDUCATION_TITLE}
       </h5>
       <p class='text-sm/relaxed text-gray-700 dark:text-gray-300'>
-        With a degree in Computer Science from the University of London, UK, I
-        cultivated the skills and knowledge that form the bedrock of my
-        expertise in web development and programming.
-      </p>
-    </li>
-    <li
-      class="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-purple-200/75 before:bg-white before:content-[''] dark:before:border-purple-800/75 dark:before:bg-gray-950"
-    >
-      <h4 class='text-sm font-semibold text-purple-600 dark:text-purple-500'>
-        2005-2007
-      </h4>
-      <h5 class='mb-2 font-bold'>
-        Master in Computer Science, University NY, USA
-      </h5>
-      <p class='text-sm/relaxed text-gray-700 dark:text-gray-300'>
-        I further honed my skills by pursuing a Master's degree in Computer
-        Science, delving deeper into advanced concepts and emerging technologies
-        to elevate my proficiency in web development at New York University.
-      </p>
-    </li>
-    <li
-      class="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-purple-200/75 before:bg-white before:content-[''] dark:before:border-purple-800/75 dark:before:bg-gray-950"
-    >
-      <h4 class='text-sm font-semibold text-purple-600 dark:text-purple-500'>
-        2007-2009
-      </h4>
-      <h5 class='mb-2 font-bold'>
-        Professional Studies in Web Developement, NY, USA
-      </h5>
-      <p class='text-sm/relaxed text-gray-700 dark:text-gray-300'>
-        My journey continued with Professional Studies in Web Development, where
-        I delved into specialized courses, refining my expertise and staying
-        abreast of the latest industry trends to excel in the dynamic world of
-        web development.
+        {i18n.EDUCATION_DESCRIPTION}
       </p>
     </li>
   </ul>

@@ -1,0 +1,13 @@
+{
+  "INFO_PROFILE_TITLE": "Software developer",
+  "INFO_RESUME_SUMMARY": "Systems engineer with 7 years of experience in full-stack development, specializing in creating efficient and secure technological solutions for businesses. My focus is on process automation and the implementation of electronic invoicing systems. With strong expertise in technologies like .NET Core, React, PHP, and SQL Server, I have led large-scale projects, developing scalable systems and managing cloud data. Additionally, I have experience in creating RESTful APIs using design patterns such as CQRS and MVC",
+  "EDUCATION_TITLE": "Bachelor's Degree in Computer Systems Engineering, Instituto Tecnológico Superior De Arandas",
+  "EDUCATION_DESCRIPTION": "With a degree in Computer Systems Engineering from the University of Instituto Tecnológico Superior De Arandas, I cultivated the skills and knowledge that form the bedrock of my expertise in software development and programming.",
+  "WORK_EXPERIENCE_TITLE_1": "Full stack developer - Flexor Infraestructura, Guadalajara, México",
+  "WORK_EXPERIENCE_DATE_1": "July  2016 – January 2019",
+  "WORK_EXPERIENCE_DESCRIPTION_1": "I participated in the development of self-billing portals for gas stations, improving the user experience and facilitating transaction management. I also created custom web pages based on client needs. I collaborated in the creation of an ERP in PHP using SQL for database management, HTML, JQuery, and Bootstrap for front-end development, which allowed for seamless integration and an intuitive interface. Finally, I implemented electronic invoicing using SOAP services in C#.",
+
+  "WORK_EXPERIENCE_TITLE_2": "Full stack developer - Massive Home, Guadalajara, México",
+  "WORK_EXPERIENCE_DATE_2": "January 2019 – Present",
+  "WORK_EXPERIENCE_DESCRIPTION_2": "I was responsible for the maintenance and updating of web applications, ensuring optimal performance and the incorporation of new functionalities. I identified and resolved errors in the code. I collaborated with StartNet, a Chinese company, in integrating an electronic invoicing service into their system. I designed and developed applications using technologies such as .NET Core, PHP, ReactJS, SQL Server, MySQL, Azure, and more, ensuring the integration of efficient solutions. I worked with teams to gather innovative and efficient solutions. I designed and implemented an electronic invoicing system complying with version 4.0 of the SAT specifications, ensuring the fiscal validity of transactions. Additionally, I supervised a group of 4 junior developers, providing technical guidance and promoting their professional development."
+}

@@ -1,11 +1,16 @@
 ---
+import { getLangFromUrl } from '@i18n/utils'
 import { $theme } from '../stores/theme.js'
 import '../styles/global.css'
+// Supports weights 100-900
+import '@fontsource-variable/inter'
+
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <!doctype html>
 <html
-  lang='en'
+  lang={lang}
   data-theme={$theme.get()}
 >
   <head>
@@ -23,7 +28,7 @@ import '../styles/global.css'
       name='generator'
       content={Astro.generator}
     />
-    <title>Astro Basics</title>
+    <title>Resume</title>
   </head>
   <body>
     <slot />
@@ -33,5 +38,6 @@ import '../styles/global.css'
 <style>
   html,
   body {
+    font-family: 'Inter Variable', sans-serif;
   }
 </style>
