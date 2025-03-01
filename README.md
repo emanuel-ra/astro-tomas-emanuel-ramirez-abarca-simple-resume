@@ -9,7 +9,7 @@ Este proyecto es una plantilla de currículum en formato web, diseñada para des
 ## 🛠️ Tecnologías utilizadas
 
 - 🌠 [Astro](https://astro.build/) - Framework de generación de sitios estáticos
-- 🎨 Tailwind CSS - Para el diseño y estilos
+- 🎨 [Tailwind CSS V4](https://tailwindcss.com/) - Para el diseño y estilos
 - ⚛️ [React](https://reactjs.org/) - Biblioteca de JavaScript para construir interfaces de usuario
 - 🗃️ [Nano Stores](https://github.com/nanostores/nanostores) - Pequeñas y rápidas tiendas de estado para React
 - 🌐 [i18next](https://www.i18next.com/) - Internacionalización para aplicaciones web
