@@ -1,0 +1,45 @@
+---
+import { LANGUAGES } from '../i18n/ui'
+import {
+  getLangFromUrl,
+  getRouteFromUrl,
+  useTranslatedPath,
+} from '../i18n/utils'
+
+const route = getRouteFromUrl(Astro.url)
+const lang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(lang)
+
+const currentLocaleData = LANGUAGES[lang]
+const otherLocales = Object.values(LANGUAGES).filter(
+  (locale) => locale.code !== lang
+)
+---
+
+<div class='relative inline-block text-left z-50'>
+  <div class='rounded-md text-xs font-semibold flex'>
+    <ul class='w-full inline-flex gap-2'>
+      <li class=''>
+        <button
+          class='whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2'
+        >
+          <currentLocaleData.flag />
+          {currentLocaleData.name}
+        </button>
+      </li>
+      {
+        otherLocales.map((locale) => (
+          <li class='text-white'>
+            <a
+              class='rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2'
+              href={translatePath(`/${route ? route : ''}`, locale.code)}
+            >
+              <locale.flag />
+              {locale.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

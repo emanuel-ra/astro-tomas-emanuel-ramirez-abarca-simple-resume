@@ -3,6 +3,7 @@ import Education from '@components/Education.astro'
 import Info from '@components/Info.astro'
 import { ThemeButton } from '@components/jsx/ThemeButton'
 import LocaleSwitch from '@components/LocaleSwitch.astro'
+import LocaleSwitchMobil from '@components/LocaleSwitchMobil.astro'
 import Social from '@components/Social.astro'
 import WorkExperience from '@components/WorkExperience.astro'
 import Layout from '@layouts/Layout.astro'
@@ -18,7 +19,8 @@ import Layout from '@layouts/Layout.astro'
         class='fixed right-0.5 top-0.5 z-50 flex items-center justify-center gap-2 p-2'
       >
         <ThemeButton client:load />
-        <LocaleSwitch />
+        <div class='block md:hidden'><LocaleSwitchMobil /></div>
+        <div class='hidden md:block'><LocaleSwitch /></div>
       </div>
 
       <div class='container mx-auto max-w-7xl mt-2 md:mt-0'>

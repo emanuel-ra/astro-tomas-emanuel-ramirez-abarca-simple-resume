@@ -1,8 +1,8 @@
 import { useStore } from '@nanostores/react';
-import { $theme, toggleTheme } from '@stores/theme';
+import { $theme, toggleTheme, useTheme } from '@stores/theme';
 
 export const ThemeButton = () => {
-
+    useTheme(); // Asegura que la suscripción solo ocurre en el cliente
     const theme = useStore($theme);
 
     return (    
@@ -22,9 +22,9 @@ const IconBrightnessUp = () => {
             viewBox='0 0 24 24'
             fill='none'
             stroke='currentColor'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
             className='inline-block size-6'
         >
             <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
