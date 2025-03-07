@@ -1,3 +1,4 @@
+import { projects } from 'src/data/projects';
 import { defaultLang, routes, showDefaultLang, ui } from './ui';
 
 export function getLangFromUrl(url: URL) {
@@ -65,4 +66,14 @@ export function getRouteFromUrl(url: URL): string | undefined {
 	}
 
 	return undefined;
+}
+
+// Hook para obtener traducciones de los proyectos
+export function useTranslationsProjects(lang: keyof (typeof projects)[0]["title"]) {
+  return function t(project: (typeof projects)[0]) {
+    return {
+      title: project.title[lang] || project.title[defaultLang],
+      description: project.description[lang] || project.description[defaultLang],
+    };
+  };
 }
