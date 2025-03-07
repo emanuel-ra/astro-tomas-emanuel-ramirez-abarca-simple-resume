@@ -1,6 +1,30 @@
 export const projects = [
-  {
+    {
     id: 1,
+    title: {
+      en: "Modular ERP with Microservices Architecture (In Development)",
+      es: "ERP Modular con Arquitectura de Microservicios (En desarrollo)",
+    },
+    description: {
+        en: "An ERP system designed for the comprehensive management of companies, branches, warehouses, clients, products, and electronic invoicing (income, expenses, and payment complements). It also handles accounts receivable, banking, and credit management. The system is built with a microservices architecture, focusing on separation of concerns, ensuring modularity and scalability. Several key patterns and technologies are integrated to optimize development and performance. The solution is deployed on **Microsoft Azure**, leveraging cloud services for scalability, security, and high availability.",
+        es: "Sistema ERP diseñado para la gestión integral de empresas, sucursales, almacenes, clientes, productos y facturación electrónica (ingresos, egresos y complementos de pago). También incluye la administración de cuentas por cobrar, bancos y créditos. El sistema está construido con una arquitectura de microservicios, enfocada en la separación de responsabilidades, lo que garantiza modularidad y escalabilidad. Se integran diversos patrones y tecnologías clave para optimizar el desarrollo y el rendimiento. La solución está desplegada en **Microsoft Azure**, aprovechando servicios en la nube para garantizar escalabilidad, seguridad y alta disponibilidad."
+    },
+    techStack: [
+        ".NET Core",
+        "React",
+        "Material UI v5",
+        "SQL Server",
+        "CosmosDB",
+        "JWT",
+        "Entity Framework",
+        "CQRS",
+        "Microsoft Azure"
+    ],
+    url: "https://blue-water-08bbb5510.5.azurestaticapps.net/",
+    order:1
+  },
+  {
+    id: 2,
     title: {
       en: "ERP for Massive Home",
       es: "ERP para Massive Home",
@@ -11,10 +35,10 @@ export const projects = [
     },
     techStack: ["PHP", "SQL", "Javascript", "Query", "Bootstrap","HTML"],
     url: "",
-    order:1
+    order:2
   },
   {
-    id: 2,
+    id: 3,
     title: {
       en: "Massive Home's Web Site",
       es: "Pagina Web de Massive Home",
@@ -25,10 +49,10 @@ export const projects = [
     },
     techStack: ["PHP", "MySql", "CodeIgniter 4", "TailwindCss V4", "JavaScript","HTML"],
     url: "https://massivehome.com.mx/",
-    order:2
+    order:3
   },
   {
-    id: 3,
+    id: 4,
     title: {
       en: "HR Management System",
       es: "Sistema Administrativo para Recursos Humanos",
@@ -39,6 +63,6 @@ export const projects = [
     },
     techStack: ["PHP", "MySql", "Laravel", "Bootstrap","JavaScript","JQuery","AdminLTE"],
     url: "https://vivimxhome.com/",
-    order:3
+    order:4
   },
 ];
