@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl } from '@i18n/utils'
+import Analytics from '@vercel/analytics/astro'
 import SpeedInsights from '@vercel/speed-insights/astro'
 import { ClientRouter } from 'astro:transitions'
 import { $theme } from '../stores/theme.js'
@@ -88,6 +89,7 @@ const lang = getLangFromUrl(Astro.url)
     <title>Tomas Emanuel Ramirez Abarca - Resume</title>
     <ClientRouter />
     <SpeedInsights />
+    <Analytics />
   </head>
   <body>
     <slot />
