@@ -2,8 +2,8 @@ export const projects = [
     {
     id: 1,
     title: {
-      en: "Modular ERP with Microservices Architecture (In Development)",
-      es: "ERP Modular con Arquitectura de Microservicios (En desarrollo)",
+      en: "Modular ERP with Microservices Architecture",
+      es: "ERP Modular con Arquitectura de Microservicios",
     },
     description: {
         en: "An ERP system designed for the comprehensive management of companies, branches, warehouses, clients, products, and electronic invoicing (income, expenses, and payment complements). It also handles accounts receivable, banking, and credit management. The system is built with a microservices architecture, focusing on separation of concerns, ensuring modularity and scalability. Several key patterns and technologies are integrated to optimize development and performance. The solution is deployed on **Microsoft Azure**, leveraging cloud services for scalability, security, and high availability.",
@@ -20,7 +20,7 @@ export const projects = [
         "CQRS",
         "Microsoft Azure"
     ],
-    url: "https://blue-water-08bbb5510.5.azurestaticapps.net/",
+    url: "",
     order:1
   },
   {
@@ -48,7 +48,7 @@ export const projects = [
       es: "Desarrollo de la página web de la empresa, donde los usuarios pueden explorar catálogos de productos, acceder a información de contacto y consultar la ubicación de tiendas. La plataforma proporciona una experiencia intuitiva para mejorar la interacción con los clientes y fortalecer la presencia digital de la empresa.",
     },
     techStack: ["PHP", "MySql", "CodeIgniter 4", "TailwindCss V4", "JavaScript","HTML"],
-    url: "https://massivehome.com.mx/",
+    url: "",
     order:3
   },
   {
@@ -62,7 +62,7 @@ export const projects = [
       es: "Desarrollo de un sistema administrativo multiempresa y multisucursal diseñado para optimizar la gestión del departamento de Recursos Humanos. Permite a los usuarios administrar empleados por sucursal, gestionar días de vacaciones, permisos, generación de contratos, prospección de candidatos y entrevistas, así como generar reportes de empleados, altas, bajas y más. La plataforma mejora la eficiencia en la administración del talento y los procesos internos de la empresa.",
     },
     techStack: ["PHP", "MySql", "Laravel", "Bootstrap","JavaScript","JQuery","AdminLTE"],
-    url: "https://vivimxhome.com/",
+    url: "",
     order:4
   },
 ];
